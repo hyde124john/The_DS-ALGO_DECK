@@ -45,7 +45,7 @@ class MissingNumber {
     }
   
   //Optimal Approach 2 - T. C = O(N), S. C = O(1)
-    public int missingNumber(int[] nums) {
+    public int missingNumber3(int[] nums) {
         int x1 =0, x2 =0;
         for(int i = 1; i <= nums.length; i++){
             x1 ^= i;
