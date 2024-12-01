@@ -26,4 +26,18 @@ class Solution {
         }
         return new int[]{-1, -1};
     }
+  //Optimal Approach (does not work in Leetcode)
+    boolean twoSum2(int arr[], int target) {
+        // code here
+        Arrays.sort(arr);
+        int left = 0, right = arr.length - 1;
+        while (left < right) {
+            int sum = arr[left] + arr[right];
+            if (sum == target) {
+                return true;
+            } else if (sum < target) left++;
+            else right--;
+        }
+        return false;
+    }
 }
