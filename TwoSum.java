@@ -14,7 +14,7 @@ class Solution {
         }
         return new int[]{-1,-1};
     }
-  //Better Approach T.C - O(NlogN) S.C -O(N)
+  //Better Approach T.C - O(N) S.C -O(N)
     public int[] twoSum1(int[] nums, int target) {
         HashMap<Integer, Integer> mpp = new HashMap<>();
         for(int i = 0; i < nums.length; i ++){
