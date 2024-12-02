@@ -1,4 +1,4 @@
-class Solution {
+class TwoSum {
   //Brute Force Approach T.C - O(N^2) S.C - O(1)
     public int[] twoSum(int[] nums, int target) {
         int n = nums.length; 
